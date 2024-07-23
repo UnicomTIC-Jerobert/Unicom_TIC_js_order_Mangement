@@ -1,0 +1,70 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "name": "ravi",
+      "phoneNumber": "0771234567",
+      "email": "ravi@123.com"
+    },
+    {
+      "id": "2",
+      "name": "kumar123",
+      "phoneNumber": "0771234569",
+      "email": "kumar@123.com"
+    },
+    {
+      "id": "3",
+      "name": "karthhick",
+      "phoneNumber": "0771231234",
+      "email": "karthick@123.com"
+    },
+    {
+      "id": "0cf6",
+      "name": "tets",
+      "phoneNumber": "sdsf",
+      "email": "as@we.com"
+    },
+    {
+      "id": "cf11",
+      "name": "raju",
+      "phoneNumber": "9808345",
+      "email": "raju@er.com"
+    },
+    {
+      "id": "a08a",
+      "name": "ram",
+      "phoneNumber": "shgdas",
+      "email": "ram@we.com"
+    }
+  ],
+  "addresses": [
+    {
+      "id": "1",
+      "houseNumber": "123",
+      "street": "main road",
+      "city": "jaffna",
+      "customerId": 1
+    },
+    {
+      "id": "2",
+      "houseNumber": "12",
+      "street": "main road",
+      "city": "jaffna",
+      "customerId": 2
+    },
+    {
+      "id": "3",
+      "houseNumber": "456",
+      "street": "a9 road",
+      "city": "jaffna",
+      "customerId": 1
+    },
+    {
+      "id": "4",
+      "houseNumber": "456",
+      "street": "a9 road",
+      "city": "jaffna",
+      "customerId": 3
+    }
+  ]
+}
