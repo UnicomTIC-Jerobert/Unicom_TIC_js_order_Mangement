@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="testForm">
+        <div>
+            <input type="text" name="personName">
+        </div>
+        <div>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> female
+        </div>
+        <div>
+            <input type="submit" value="test">
+        </div>
+    </form>
+
+
+    <script>
+        document.getElementById('testForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            console.log(document.forms["testForm"]);
+            console.log(event.target["personName"].value);
+
+            const personName = document.forms["testForm"]["personName"].value;
+            const personGender = document.forms["testForm"]["gender"].value;
+
+            const personObj = { name: personName, gender: personGender }
+
+            console.log(personObj)
+        })
+    </script>
+</body>
+
+</html>
