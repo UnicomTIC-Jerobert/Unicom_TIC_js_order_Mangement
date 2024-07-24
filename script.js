@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 async function getAllCustomers() {
-    const url = "http://localhost:3000/customers";
+    const url = "http://localhost:4000/customers";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -65,7 +65,7 @@ async function createCustomer(obj) {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    const response = await fetch("http://localhost:3000/customers", {
+    const response = await fetch("http://localhost:4000/customers", {
         method: "POST",
         body: JSON.stringify({
             "name": obj.name,

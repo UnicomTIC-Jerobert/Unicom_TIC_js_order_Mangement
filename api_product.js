@@ -1,7 +1,7 @@
 export async function getAllProducts() {
 
     // using promise
-    // fetch('http://localhost:3000/products')
+    // fetch('http://localhost:4000/products')
     // .then(function (res) {
     //     return res.json()
     // })
@@ -12,7 +12,7 @@ export async function getAllProducts() {
     //     console.log(err)
     // })
 
-    const url = "http://localhost:3000/products";
+    const url = "http://localhost:4000/products";
     try {
         const response = await fetch(url);
         console.log(response)
@@ -30,7 +30,7 @@ export async function getAllProducts() {
 
 export function getSingleProduct(id) {
 
-    fetch(`http://localhost:3000/products/${id}`)
+    fetch(`http://localhost:4000/products/${id}`)
         .then(function (res) {
             return res.json()
         })
@@ -46,7 +46,7 @@ export async function createProduct(obj) {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    const response = await fetch("http://localhost:3000/products", {
+    const response = await fetch("http://localhost:4000/products", {
         method: "POST",
         body: JSON.stringify({
             "name": obj.productName,

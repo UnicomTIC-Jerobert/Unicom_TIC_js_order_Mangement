@@ -1,5 +1,5 @@
 function getAllCustomers() {
-    fetch('http://localhost:3000/customers')
+    fetch('http://localhost:4000/customers')
         .then(function (response) {
             return response.json()
         })
@@ -12,7 +12,7 @@ function getAllCustomers() {
 }
 
 async function getAllCustomers() {
-    const url = "http://localhost:3000/customers";
+    const url = "http://localhost:4000/customers";
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -27,7 +27,7 @@ async function getAllCustomers() {
 }
 
 function getSingleCustomer1(id) {
-    fetch('http://localhost:3000/customers/' + id)
+    fetch('http://localhost:4000/customers/' + id)
         .then(function (response) {
             return response.json()
         })
@@ -40,7 +40,7 @@ function getSingleCustomer1(id) {
 }
 
 function getSingleCustomer2(id) {
-    fetch(`http://localhost:3000/customers/${id}`)
+    fetch(`http://localhost:4000/customers/${id}`)
         .then(function (response) {
             return response.json()
         })
@@ -57,7 +57,7 @@ async function createCustomer1() {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    const response = await fetch("http://localhost:3000/customers", {
+    const response = await fetch("http://localhost:4000/customers", {
         method: "POST",
         body: JSON.stringify({
             "name": "vijay",
@@ -72,7 +72,7 @@ async function createCustomer2(obj) {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    const response = await fetch("http://localhost:3000/customers", {
+    const response = await fetch("http://localhost:4000/customers", {
         method: "POST",
         body: JSON.stringify({
             "name": obj.name,
