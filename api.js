@@ -1,6 +1,4 @@
-
-
-function getAllCustomers1() {
+function getAllCustomers() {
     fetch('http://localhost:3000/customers')
         .then(function (response) {
             return response.json()
@@ -13,7 +11,7 @@ function getAllCustomers1() {
         })
 }
 
-async function getAllCustomers2() {
+async function getAllCustomers() {
     const url = "http://localhost:3000/customers";
     try {
         const response = await fetch(url);
@@ -85,4 +83,3 @@ async function createCustomer2(obj) {
     });
 }
 
-module.exports = { createCustomer2 }
