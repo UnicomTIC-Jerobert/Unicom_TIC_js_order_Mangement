@@ -72,5 +72,49 @@
       "city": "jaffna",
       "customerId": 3
     }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "quantity": 200,
+      "price": 130
+    },
+    {
+      "id": "2",
+      "name": "Orange",
+      "quantity": 200,
+      "price": 80
+    },
+    {
+      "id": "3",
+      "name": "grapes",
+      "quantity": 200,
+      "price": 3000
+    },
+    {
+      "id": "2a88",
+      "name": "banana",
+      "quantity": 200,
+      "price": 150
+    },
+    {
+      "id": "c7cd",
+      "name": "banana",
+      "quantity": 200,
+      "price": 150
+    },
+    {
+      "id": "f6b0",
+      "name": "Mango",
+      "quantity": 100,
+      "price": 200
+    },
+    {
+      "id": "6ec5",
+      "name": "hghj",
+      "quantity": "45",
+      "price": "767.00"
+    }
   ]
 }
